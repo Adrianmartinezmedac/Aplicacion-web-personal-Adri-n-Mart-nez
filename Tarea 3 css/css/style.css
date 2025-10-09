@@ -1,0 +1,81 @@
+       
+body{
+    margin: 0;
+    padding: 0%;
+    /*background-image: url(../img/3aa97690b794dcf95b69181a9250d49e.jpg);*/
+    background-color: #f0f4f8;
+}       
+ h1{
+text-transform: uppercase;
+ }      
+       
+.cabecera{
+            color:rgb(255, 255, 255);
+            background-image: linear-gradient(45deg, #0066cc,#66ccff);
+            text-align: center;
+            font-size: 20px;
+            padding: 30px;
+            text-transform: uppercase;
+        }
+
+#presentación{
+    color: white;
+    background-color: #0066cc;
+    border-radius: 12px;
+    border-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 8px #000000 ;
+}
+
+
+
+
+.enlaces{
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.boton{
+    background-color: rgb(0, 21, 255);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    transition: background-color 1s, transform 1s;
+}
+
+.boton:hover{
+    color: orange;
+    background-color: beige;
+    transform: scale(2);
+}
+
+.card{
+    display: inline-block;
+    background-color: #f0f4f8;
+    border: 2px solid rgb(11, 28, 184);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 1s, background-color 2s;
+
+}
+
+.card:hover{
+    background-color: #66ccff ;
+    transform: rotate(25deg);
+
+}
+
+#pie{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+
+        }
+
+
