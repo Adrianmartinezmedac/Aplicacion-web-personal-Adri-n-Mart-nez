@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Añadir comentarios a una lista</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #listaComentarios {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #e6e6e6; /* Fondo gris claro */
+    }
+    input {
+      width: 300px;
+      padding: 5px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Comentarios</h2>
+  <input type="text" id="comentario" placeholder="Escribe tu comentario aquí">
+  <button onclick="agregarComentario()">Añadir</button>
+
+  <div id="listaComentarios">
+    
+  </div>
+
+  <script>
+    function agregarComentario() {
+    
+      var texto = document.getElementById("comentario").value;
+      //accede al texto que el usuario ha escrito en el campo de entrada
+
+      
+      if (texto.trim() === "") {
+        alert("Por favor, escribe un comentario.");
+    
+        return;
+      }
+
+      var nuevoParrafo = document.createElement("p");
+      //Esta creando un nuevo parrafo
+      
+      var contenido = document.createTextNode(texto);
+      //convierte el texto en un nodo que puede insertarse en el HTML
+
+      nuevoParrafo.appendChild(contenido);
+      //mete el parrafo dentro del texto
+
+      nuevoParrafo.style.color = "blue";
+      //en vez de el texto tener un color predeterminado, este comando lo cambia a otro color, en este caso al color azul
+ 
+      var contenedor = document.getElementById("listaComentarios");
+      //Este comentario accede al contenedor donder va a ir el texto
+      contenedor.appendChild(nuevoParrafo);
+      //añade un nuevo texto al contenedor
+      document.getElementById("comentario").value = "";
+      //accede al texto que el usuario ha escrito en el campo de entrada
+    }
+  </script>
+
+
+</body>
+</html>

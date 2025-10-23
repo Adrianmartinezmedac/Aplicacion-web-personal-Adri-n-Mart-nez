@@ -1,0 +1,163 @@
+/* ================================
+   🌐 Parte 1: Estilo común global
+   ================================ */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0f0f0, #e0e0ff);
+  color: #333;
+}
+
+/* ================================
+   🔹 1. Selectores
+   ================================ */
+
+/* Selector por etiqueta */
+h1, h2, h3 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+/* Selector de clase */
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #444;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+/* Selector por ID */
+#cabecera {
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+#pie {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #ccc;
+}
+
+/* Pseudoclases */
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #666;
+  transform: scale(1.1);
+}
+
+.menu a:visited {
+  color: #ccc;
+}
+
+.menu a:active {
+  background-color: #222;
+}
+
+/* ================================
+   🔹 2. Propiedades de texto
+   ================================ */
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ================================
+   🔹 3. Propiedades de fuente
+   ================================ */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/* ================================
+   🔹 4. Color y fondo
+   ================================ */
+section.contenido {
+  background: linear-gradient(to bottom, #ffffff, #dfe6f0);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ================================
+   🔹 5. Bordes y sombreados
+   ================================ */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+/* ================================
+   🔹 6. Transiciones y transformaciones
+   ================================ */
+input[type="submit"]:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* ================================
+   🧭 Parte 3: Navegación coherente
+   ================================ */
+nav ul.menu {
+  background-color: #444;
+}
+
+nav ul.menu li a {
+  color: white;
+}
+
+footer#pie {
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
